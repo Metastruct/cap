@@ -6,28 +6,7 @@
 */
 StarGate_Group = StarGate_Group or {};
 
-local addonlist = {}
-
-if (GetAddonList!=nil) then
-	for _,v in pairs(GetAddonList(true)) do
-		for k,c in pairs(GetAddonInfo(v)) do
-			if (k == "Name") then
-				table.insert(addonlist, c);
-			end
-		end
-	end
-end
-
-local js_addonlist = {}
-if (GetAddonListJson!=nil) then
-	for _,v in pairs(GetAddonListJson(true)) do
-		for k,c in pairs(GetAddonInfoJson(v)) do
-			if (k == "Name") then
-				table.insert(js_addonlist, c);
-			end
-		end
-	end
-end
+local addonlist = { "Carter Addon Pack", "Carter Addon Pack - Resources" }
 
 local cap_ver = tonumber(StarGate.CapVer);
 local cap_res = 0;
