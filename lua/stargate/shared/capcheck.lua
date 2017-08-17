@@ -7,6 +7,7 @@
 StarGate_Group = StarGate_Group or {};
 
 local addonlist = { "Carter Addon Pack", "Carter Addon Pack - Resources" }
+local js_addonlist = { "Wiremod" }
 
 local cap_ver = tonumber(StarGate.CapVer);
 local cap_res = 0;
